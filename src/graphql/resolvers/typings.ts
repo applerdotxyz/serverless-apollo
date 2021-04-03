@@ -13,3 +13,20 @@ export interface IDummyMutationArgs {
     secondInput: string;
   };
 }
+
+
+export interface IBookObject {
+  title: string;
+  author: string;
+}
+
+export interface IBookQueryArgs {
+  bookId: string;
+}
+
+export interface IBookMutationArgs {
+  input: {
+    title: string;
+    author: string;
+  };
+}

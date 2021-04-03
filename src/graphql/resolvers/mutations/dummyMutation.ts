@@ -1,6 +1,6 @@
 import { IDummyMutationArgs } from '../typings';
 
-async function dummyMutation(
+export async function dummyMutation(
   _: any,
   args: IDummyMutationArgs,
 ): Promise<boolean> {
@@ -10,5 +10,3 @@ async function dummyMutation(
 
   return true;
 }
-
-export default dummyMutation;

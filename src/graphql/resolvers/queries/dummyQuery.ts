@@ -1,6 +1,6 @@
 import { IDummyObject, IDummyQueryArgs } from '../typings';
 
-async function dummyQuery(
+export async function dummyQuery(
   _: any,
   args: IDummyQueryArgs,
 ): Promise<IDummyObject> {
@@ -8,20 +8,11 @@ async function dummyQuery(
 
   console.log(`Query object with id ${itemId}`);
 
+  // FIXME: add logic to query from database
   return {
     firstItem: 'first',
     secondItem: 'second',
   };
 }
 
-const books = [
-  {
-    title: 'The Awakening',
-    author: 'Kate Chopin',
-  },
-  {
-    title: 'City of Glass',
-    author: 'Paul Auster',
-  },
-];
-export default { dummyQuery, books: () => books};
+export default dummyQuery;
