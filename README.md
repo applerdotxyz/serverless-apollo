@@ -11,8 +11,9 @@ authorAvatar: 'https://avatars3.githubusercontent.com/u/28927258?s=460&v=4'
 -->
 # Apollo Lambda GraphQL API Example
 This example demonstrates how to setup a lambda graphql API with apollo
+( Slight extension from https://github.com/serverless/examples )
 
-- I used apiKeys to secure the endpoints but you can add custom authorizers
+@serverless
 
 ## Use Cases
 - Small graphql API
@@ -28,7 +29,6 @@ This example demonstrates how to setup a lambda graphql API with apollo
 ## Usage
 - To test it locally with serverless-offline by running: 
   `npm run dev`
-- set `x-api-key` header with key `your-api-key-that-is-at-least-characters-long`
 
 ## Future
 - Add support for subscription with Redis
